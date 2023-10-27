@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-import TopicsHeader from '../Components/TopicsHeader'
 import Footer from '../Components/Footer'
 import HeaderNews from '../Components/HeaderNews'
 import TopicHeaderCard from '../Components/TopicHeaderCard'
@@ -37,7 +36,6 @@ function Home() {
     return (
         <>
             <Navbar />
-            <TopicsHeader/>
             <HeaderNews/>
             <HeroSection/>
             {
