@@ -8,9 +8,9 @@ function HeaderNews() {
     useEffect(() => {
         const fetchNews = async () => {
             try {
-                const response = await fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=5a29c60dd2b9444884c083e313b2a8ce`).then((res) => res.json())
+                const response = await fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=5a29c60dd2b9444884c083e313b2a8ce&pageSize=10`).then((res) => res.json())
                 const data = response;
-                setNews(data.articles.reverse().filter((item) => item.title !== '[Removed]' && item.image !== null && item.image !== '').slice(0, 10))
+                setNews(data.articles.reverse().filter((item) => item.title !== '[Removed]' && item.image !== null && item.image !== ''))
             }
             catch (err) {
                 setError(true)
@@ -28,7 +28,7 @@ function HeaderNews() {
     return (
         <>
             {loading ? <Loading /> : <>
-                          {/* <HeroSection header={news[0].title} subheader={news[0].description} imageLink={news[0].urlToImage} urlLink={news[0].url} />     */}
+                          <HeroSection title={news[0].title} content={news[0].description} imgUrl={news[0].urlToImage} url={news[0].url} />    
             </>}
         </>
     )

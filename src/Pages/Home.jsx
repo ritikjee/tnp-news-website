@@ -3,7 +3,7 @@ import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import HeaderNews from '../Components/HeaderNews'
 import TopicHeaderCard from '../Components/TopicHeaderCard'
-import HeroSection from '../Components/HeroSection'
+import TopicsHeader from '../Components/TopicsHeader'
 
 
 function Home() {
@@ -36,8 +36,9 @@ function Home() {
     return (
         <>
             <Navbar />
+            <TopicsHeader/>
             <HeaderNews/>
-            <HeroSection/>
+
             {
                 topicData.map((topic)=>{
                     return(

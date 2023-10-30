@@ -86,7 +86,7 @@ function TopicsHeader() {
     
     ]
   return (
-    <div className='flex ' >
+    <div className='flex container' >
         <div  className="btn btn-ghost normal-case text-md" >
         Popular Hashtags:
         </div>

@@ -23,7 +23,7 @@ function TopicHeaderCard({ topic }) {
 
                 return (
                     <>
-                        <div className='my-10'>
+                        <div className='my-10 w-screen'>
                             <h1 className="btn btn-ghost normal-case text-2xl" >{str}</h1>
                             <hr class="h-px  border-0 bg-gray-500 mx-7"/>
                             <div className=' flex justify-evenly flex-row '>
