@@ -26,8 +26,8 @@ function TopicHeaderCard({ topic }) {
                         <div className='my-10 w-screen'>
                             <h1 className="btn btn-ghost normal-case text-2xl" >{str}</h1>
                             <hr class="h-px  border-0 bg-gray-500 mx-7"/>
-                            <div className=' flex justify-evenly flex-row '>
-                            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
+                            <div className=' flex justify-center ' >
+                            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 '>
                             {!topics ? <h1>Nothing here</h1> :
                                 topics.map((topic, index) => {
                                     return (

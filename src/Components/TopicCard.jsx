@@ -3,7 +3,7 @@ import image from '../assets/noImage.png'
 function TopicCard({title,description,urlToImage,urlToSrc}) {
     return (
         <>
-            <div className="card card-compact sm:w-72 max-w-xs  bg-base-100 shadow-xl my-10">
+            <div className="card card-compact sm:w-72 max-w-xs  bg-base-100 shadow-2xl my-10 sm:mx-5 md:mx-10">
                 <figure><img src={urlToImage||image} className='w-[200px] h-[200px]' alt="image" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{title}</h2>

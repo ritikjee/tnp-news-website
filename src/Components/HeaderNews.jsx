@@ -28,8 +28,9 @@ function HeaderNews() {
     return (
         <>
             {loading ? <Loading /> : <>
-                          <HeroSection title={news[0].title} content={news[0].description} imgUrl={news[0].urlToImage} url={news[0].url} />    
+                          <HeroSection news={news} />    
             </>}
+
         </>
     )
 }
